@@ -58,8 +58,6 @@ Desktop.ini # Windows
 
 # Environment variables
 # Contains sensitive information like API keys, never commit these!
-.env
-.env.local
 .env.*.local # For different environments like .env.development.local
 
 # IDE and Editor specific files (more general)
@@ -87,7 +85,7 @@ Desktop.ini # Windows
 # ========================
 # Solana program build output
 /target/deploy/ # This is where your compiled Solana program .so files go
-
+cpi-contract/target/
 # Anchor framework specific files
 .anchor/ # Anchor framework build/IDL output
 
@@ -99,3 +97,6 @@ program-id.json
 # This is an example, adjust as needed for your specific project's sensitive files
 *.json.keypair # e.g., for test keypairs, but should generally be excluded if they hold private keys
 .env.secret
+config.bat
+temp_auto_push.bat
+temp_interactive_push.bat
